@@ -1,4 +1,16 @@
+body {
+  width: 50vw;
+  text-align: justify;
+  margin: auto;
+  background-color: blanchedalmond;
+}
+
 h1 {
   font-size: 3vw;
-  
+  margin: 3em;
+  text-align: center;
+}
+
+#bioParagraph {
+  line-height: 1.6;
 }
