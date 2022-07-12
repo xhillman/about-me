@@ -53,3 +53,5 @@ if (pastCoding === 'y' || pastCoding === 'yes') {
 } else {
   alert('I was looking for a yes or no answer but it\'s cool. On to the next question!');
 }
+
+alert(`Thanks for playing ${username}! Maybe next time you can ask me some questions!`);
