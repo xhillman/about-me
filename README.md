@@ -10,6 +10,8 @@ An about me guessing game to teach the user a little more about who I am. Users 
 
 [CSS Bold: A Guide to Using Font-Weight](https://careerkarma.com/blog/css-bold/#:~:text=To%20create%20a%20CSS%20bold,piece%20of%20text%20should%20be.)
 
+[JavaScript Random](https://www.w3schools.com/js/js_random.asp)
+
 ### Reflections and Comments
 
 **7/12/2022** Lab 2
