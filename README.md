@@ -13,7 +13,7 @@ An about me guessing game to teach the user a little more about who I am. Users 
 ### Reflections and Comments
 
 **7/12/2022** Lab 2
-So far, so good. This lab consisted mostly of concepts that I have seen in the past but acted as a good reenforcement of skills I'll continue to utilize moving forward. 
+So far, so good. This lab consisted mostly of concepts that I have seen in the past but acted as a good reenforcement of skills I'll continue to utilize moving forward.
 
 I've noticed that CSS can be very fickle and although there are many ways to get the desired result, it definitely takes some trial and error to get there. It took me about an hour and a half to complete this assignment which is pretty much what I expected.
 
@@ -26,4 +26,4 @@ Additional content was added to the main page to include a list of my favorite m
 
 CSS continues to be fickle. Without the default properties provided by the browser, it takes a bit more time to get things exactly as you'd like them.
 
-This lab was a bit more difficult than I expected but was able to work through the requirements. I found that laying things out in psuedo-code first was helpful in identifying how certain parts of my loops and if statements needed to be constructed. It took me about two and a half hours to complete this lab which is longer than I anticipated.
+This lab was a bit more difficult than I expected but was able to work through the requirements. I found that laying things out in psuedo-code first was helpful in identifying how certain parts of my loops and if statements needed to be constructed. It took me about two and a half hours to complete this lab which is longer than the hour and a half I anticipated.
