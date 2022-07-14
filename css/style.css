@@ -6,9 +6,10 @@ body {
 }
 
 h1 {
-  font-size: 3vw;
-  margin: 3em;
+  font-size: 4vw;
+  margin: 2em;
   text-align: center;
+  font-weight: bold;
 }
 
 #bioParagraph {
@@ -16,13 +17,14 @@ h1 {
 }
 
 h3 {
-  font-size: 2vw;
+  font-size: 2.5vw;
   margin-top: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
+  font-weight: bold;
 }
 
 ul {
-  list-style: circle;
+  list-style: disc;
 }
 
 .footer {
@@ -36,13 +38,39 @@ ul {
   padding: 5px;
 }
 
+#interestParagraph {
+  line-height: 1.6;
+  border: 2px solid black;
+  margin: 35px;
+  padding: 10px;
+}
+
 #topMarvelChar {
   list-style-type: decimal;
   margin-top: 25px;
   margin-bottom: 45px;
   line-height: 1.2;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 strong {
   font-weight: bold;
 }
+
+.sectionHeading {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.sublist {
+  margin-left: 20px;
+  margin-top: 5px;
+  list-style: circle;
+}
+
+ul li {
+  margin-top: 10px;
+}
+
