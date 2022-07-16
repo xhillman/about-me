@@ -4,8 +4,7 @@ let username = prompt('What is your name?');
 let userScore = 0;
 alert(`Welcome to my site ${username}! We're going to play a guessing game, okay?`);
 
-function questionOne(){
-
+function questionOne() {
   let homeState = prompt('Am I from Massachusetts?\n Yes (y) or No (n)').toLowerCase();
   if (homeState === 'y' || homeState === 'yes') {
     userScore++;
@@ -15,12 +14,10 @@ function questionOne(){
   } else {
     alert('I was looking for a yes or no answer but it\'s cool. On to the next question!');
   }
-  console.log(`User Score: ${userScore}`);
 }
 questionOne();
 
-function questionTwo(){
-
+function questionTwo() {
   let myCollege = prompt('Did I attend Harvard University?\n Yes (y) or No (n)').toLowerCase();
   if (myCollege === 'y' || myCollege === 'yes') {
     alert('LOL I wish! I went to the University of Massachusetts - Dartmouth.');
@@ -30,12 +27,10 @@ function questionTwo(){
   } else {
     alert('I was looking for a yes or no answer but it\'s cool. On to the next question!');
   }
-  console.log(`User Score: ${userScore}`);
 }
 questionTwo();
 
-function questionThree(){
-
+function questionThree() {
   let myPet = prompt('Do I have a pet parrot?\n Yes (y) or No (n)').toLowerCase();
   if (myPet === 'y' || myPet === 'yes') {
     alert('Incorrect! They\'re way too loud!');
@@ -45,12 +40,10 @@ function questionThree(){
   } else {
     alert('I was looking for a yes or no answer but it\'s cool. On to the next question!');
   }
-  console.log(`User Score: ${userScore}`);
 }
 questionThree();
 
-function questionFour(){
-
+function questionFour() {
   let myJob = prompt('Am I coming directly from the aerospace industry?\n Yes (y) or No (n)').toLowerCase();
   if (myJob === 'y' || myJob === 'yes') {
     alert('Wrong! I switched to real estate before pursuing software development.');
@@ -60,12 +53,10 @@ function questionFour(){
   } else {
     alert('I was looking for a yes or no answer but it\'s cool. On to the next question!');
   }
-  console.log(`User Score: ${userScore}`);
 }
 questionFour();
 
-function questionFive(){
-
+function questionFive() {
   let pastCoding = prompt('Did I know any coding before I started Code 201?\n Yes (y) or No (n)').toLowerCase();
   if (pastCoding === 'y' || pastCoding === 'yes') {
     userScore++;
@@ -75,44 +66,30 @@ function questionFive(){
   } else {
     alert('I was looking for a yes or no answer but it\'s cool. On to the next question!');
   }
-  console.log(`User Score: ${userScore}`);
 }
 questionFive();
 
-function questionSix(){
-
+function questionSix() {
   let myNum = Math.floor(Math.random() * 25);
-  console.log(`Random Number: ${myNum}`);
-  let numGuesses = 1;
-  let userNum = prompt('Guess a number between 1 and 25! \nI\'ll give you 4 tries.');
-  if (userNum === myNum) {
-    userScore++;
-    alert(`You got it! My number was ${userNum}!`);
-  } else {
-    while (userNum !== myNum && numGuesses < 4) {
-      if (userNum > myNum) {
-        numGuesses++;
-        userNum = prompt(`Too high!\nYou have ${4 - numGuesses} left!`);
-      } else if (userNum < myNum) {
-        userNum = prompt(`Too Low!\nYou have ${4 - numGuesses} left!`);
-        numGuesses++;
-      } else {
-        userNum = myNum;
-        userScore++;
-        alert(`You got it! My number was ${userNum}!`);
-        break;
-      }
+  for (let i = 0; i < 4; i++) {
+    let userNum = prompt('Guess a number from 1 to 25!');
+    if (+userNum === myNum) {
+      alert(`You got it! My number was ${myNum}!`);
+      userScore++;
+      break;
+    } else if (+userNum > myNum) {
+      alert('Too high!');
+    } else if (+userNum < myNum) {
+      alert('Too low!');
+    }
+    if (i === 3) {
+      alert(`Awe man, I was thinking of the number ${myNum}!`);
     }
   }
-  if (userNum !== myNum) {
-    alert(`The number was ${myNum}!`);
-  }
-  console.log(`User Score: ${userScore}`);
 }
 questionSix();
 
-function questionSeven(){
-
+function questionSeven() {
   let favColors = ['black', 'green', 'blue'];
   let numColorGuesses = 1;
   let userColorGuess = prompt('I have three favorite colors, can you guess at least one? You get 6 tries on this one.').toLowerCase();
@@ -129,7 +106,6 @@ function questionSeven(){
   if (userColorGuess !== favColors[0] && userColorGuess !== favColors[1] && userColorGuess !== favColors[2]) {
     alert(`You tried your best! My three favorite colors are ${favColors[0]}, ${favColors[1]} and ${favColors[2]}!`);
   }
-  console.log(`User Score: ${userScore}`);
 }
 questionSeven();
 
