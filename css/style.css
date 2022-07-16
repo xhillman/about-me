@@ -50,7 +50,7 @@ ul {
   margin-top: 25px;
   margin-bottom: 45px;
   line-height: 1.2;
-  margin-left: auto;
+  margin-left: 20vw;
   margin-right: auto;
 }
 
@@ -72,5 +72,9 @@ strong {
 
 ul li {
   margin-top: 10px;
+}
+
+.historyInfo {
+  margin-left: 5vw;
 }
 
